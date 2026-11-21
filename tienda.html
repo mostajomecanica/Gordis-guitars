@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f0d0b">
+  <script>document.documentElement.classList.add("js")</script>
+  <title>Tienda · Gordis Guitars</title>
+  <meta name="description" content="Tienda online de Gordis Guitars: guitarras, bajos, amplificadores, pedales y accesorios. Outlet, vintage y usados.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="logo.svg" alt="">
+      <span class="brand-name">GORDIS <span>GUITARS</span></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html#servicios">Servicios</a>
+      <a class="activo" href="tienda.html" aria-current="page">Tienda</a>
+      <a href="index.html#lucas">Quién soy</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <button class="btn btn-gold carrito-btn" data-abrir-carrito aria-label="Abrir carrito">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg>
+      <span class="txt">Carrito</span> <span class="cuenta" data-cuenta>0</span>
+    </button>
+    <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" data-menu>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="tienda-hero">
+    <div class="wrap">
+      <h1>Tienda</h1>
+      <p class="lead">Guitarras, bajos, amplis, pedales y accesorios: outlet, vintage y usados revisados. Armá el pedido y lo coordinamos por WhatsApp (envío, retiro y forma de pago).</p>
+    </div>
+  </section>
+
+  <div class="filtros">
+    <div class="wrap">
+      <div class="chips" data-chips></div>
+      <input class="buscar" type="search" placeholder="Buscar marca o modelo…" data-buscar aria-label="Buscar">
+      <select class="ordenar" data-ordenar aria-label="Ordenar">
+        <option value="rel">Destacados</option>
+        <option value="menor">Menor precio</option>
+        <option value="mayor">Mayor precio</option>
+        <option value="az">Nombre A–Z</option>
+      </select>
+    </div>
+  </div>
+
+  <section class="tienda-main">
+    <div class="wrap">
+      <h2 class="sr-only">Productos</h2>
+      <p class="resultado" data-resultado aria-live="polite"></p>
+      <div class="prod-grid" data-lista></div>
+      <p class="vacio" data-vacio hidden>No encontramos productos con esa búsqueda. ¿Lo buscás? <a data-wa data-msg="Hola Lucas, estoy buscando un producto que no vi en la tienda." href="#">Preguntame por WhatsApp</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="logo.svg" alt=""><span class="brand-name">GORDIS <span>GUITARS</span></span></a>
+    <span>© <span data-anio></span> Gordis Guitars · <span data-zona></span></span>
+  </div>
+</footer>
+
+<!-- Carrito -->
+<div class="carrito" data-carrito>
+  <div class="fondo" data-cerrar-carrito></div>
+  <aside class="panel" aria-label="Carrito">
+    <div class="carrito-head"><h3>Tu pedido</h3><button class="cerrar" data-cerrar-carrito aria-label="Cerrar">×</button></div>
+    <div class="carrito-items" data-items></div>
+    <div class="carrito-pie">
+      <div class="total"><span>Total</span><b data-total>$ 0</b></div>
+      <p>Al confirmar se abre WhatsApp con tu pedido listo para enviar. Ahí coordinamos envío y pago.</p>
+      <a class="btn btn-wa" data-pedir href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/></svg>
+        Pedir por WhatsApp
+      </a>
+    </div>
+  </aside>
+</div>
+
+<div class="toast" data-toast>Agregado al carrito</div>
+
+<a class="wa-flotante" data-wa href="#" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 0 1-2.8-2.8l.8-1-1-2z"/></svg>
+</a>
+
+<script src="config.js"></script>
+<script src="productos.js"></script>
+<script src="main.js"></script>
+<script src="tienda.js"></script>
+</body>
+</html>

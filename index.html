@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f0d0b">
+  <script>document.documentElement.classList.add("js")</script>
+  <title>Gordis Guitars · Guitarras, usados y consignación</title>
+  <meta name="description" content="Gordis Guitars: artículos de guitarra, compraventa de instrumentos usados y consignación. Atendido por Lucas Vigo, guitarrista.">
+  <meta property="og:title" content="Gordis Guitars">
+  <meta property="og:description" content="Artículos de guitarra, compraventa de usados y consignación.">
+  <meta property="og:image" content="logo.svg">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===================== ENCABEZADO ===================== -->
+<header class="header">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <img src="logo.svg" alt="">
+      <span class="brand-name">GORDIS <span>GUITARS</span></span>
+    </a>
+    <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" data-menu>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav">
+      <a href="#servicios">Servicios</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="#lucas">Quién soy</a>
+      <a href="#fotos">Fotos</a>
+      <a class="btn btn-gold" href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ===================== PORTADA ===================== -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <h1>Guitarras que buscan <em>nuevo dueño</em>.</h1>
+      <p class="lead">Accesorios, usados revisados y consignación. Atiende Lucas Vigo, guitarrista de Imago: le escribís y te responde él.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="tienda.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg>
+          Ver la tienda
+        </a>
+        <a class="btn btn-ghost" data-wa href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 0 1-2.8-2.8l.8-1-1-2z"/></svg>
+          Escribime por WhatsApp
+        </a>
+      </div>
+      <p class="hero-zona">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span><span data-zona></span> · <span data-horario></span></span>
+      </p>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <defs>
+          <radialGradient id="caja" cx="50%" cy="45%" r="60%">
+            <stop offset="0" stop-color="#3a2a1b"/><stop offset="1" stop-color="#120e0a"/>
+          </radialGradient>
+          <linearGradient id="oro" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f4c065"/><stop offset=".6" stop-color="#e39a35"/><stop offset="1" stop-color="#b8601b"/>
+          </linearGradient>
+        </defs>
+        <circle cx="200" cy="200" r="190" fill="url(#caja)"/>
+        <g fill="none" stroke="url(#oro)">
+          <circle cx="200" cy="200" r="172" stroke-width="2" stroke-dasharray="2 7"/>
+          <circle cx="200" cy="200" r="160" stroke-width="10" stroke-dasharray="14 6" opacity=".85"/>
+          <circle cx="200" cy="200" r="146" stroke-width="1.5"/>
+          <circle cx="200" cy="200" r="138" stroke-width="5" stroke-dasharray="3 5" opacity=".7"/>
+          <circle cx="200" cy="200" r="128" stroke-width="1.5"/>
+        </g>
+        <circle cx="200" cy="200" r="118" fill="#080605"/>
+        <g stroke="#e8d9bf" stroke-linecap="round">
+          <line x1="165" y1="0" x2="165" y2="400" stroke-width="2.6" opacity=".75"/>
+          <line x1="179" y1="0" x2="179" y2="400" stroke-width="2.2" opacity=".75"/>
+          <line x1="193" y1="0" x2="193" y2="400" stroke-width="1.9" opacity=".75"/>
+          <line x1="207" y1="0" x2="207" y2="400" stroke-width="1.5" opacity=".8"/>
+          <line x1="221" y1="0" x2="221" y2="400" stroke-width="1.2" opacity=".85"/>
+          <line x1="235" y1="0" x2="235" y2="400" stroke-width="1" opacity=".9"/>
+        </g>
+        <image href="logo.svg" x="238" y="238" width="150" height="130" transform="rotate(10 313 303)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICIOS ===================== -->
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head revelar">
+      <div>
+        <h2>Tres formas de moverte en el mundo de la guitarra.</h2>
+      </div>
+      <p class="lead">Ya sea que busques tu próximo equipo o quieras vender el que no usás, te acompaño en todo el proceso.</p>
+    </div>
+
+    <div class="servicios">
+      <article class="servicio revelar">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg>Venta de artículos</h3>
+        <div>
+          <p>Lo que tu guitarra necesita, elegido por un guitarrista con años de escenario.</p>
+          <a class="link" href="tienda.html">Ver la tienda →</a>
+        </div>
+        <ul><li>Cuerdas, púas, correas y cables</li><li>Pedales y amplificadores</li><li>Estuches, fundas y repuestos</li></ul>
+      </article>
+
+      <article class="servicio revelar">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h11l-3-3M17 17H6l3 3"/></svg>Compraventa de usados</h3>
+        <div>
+          <p>Compro tu instrumento o equipo usado, y vendo usados revisados y calibrados, listos para tocar.</p>
+          <a class="link" data-wa data-msg="Hola Lucas, quiero vender/permutar un instrumento usado." href="#">Cotizar mi equipo →</a>
+        </div>
+        <ul><li>Tasación en el momento</li><li>Revisión y puesta a punto</li><li>Tu equipo puede ser parte de pago</li></ul>
+      </article>
+
+      <article class="servicio revelar">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7v5c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V7z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Consignación</h3>
+        <div>
+          <p>Dejás tu instrumento y yo me encargo de venderlo: fotos, publicación, consultas y entrega.</p>
+          <a class="link" data-wa data-msg="Hola Lucas, quiero dejar un instrumento en consignación." href="#">Consultar condiciones →</a>
+        </div>
+        <ul><li>El precio lo ponés vos, con mi asesoramiento</li><li>Lo muestro en la web y en redes</li><li>Cobrás cuando se vende</li></ul>
+      </article>
+    </div>
+
+    <div class="pasos revelar">
+      <h3>¿Cómo funciona la consignación?</h3>
+      <ol class="pasos-grid">
+        <li class="paso"><b>Me escribís</b><span>Mandame fotos y una descripción del instrumento.</span></li>
+        <li class="paso"><b>Lo revisamos</b><span>Lo vemos juntos y acordamos el precio de venta.</span></li>
+        <li class="paso"><b>Lo publico</b><span>Fotos, web y redes sociales.</span></li>
+        <li class="paso"><b>Cobrás</b><span>Cuando se vende, te transfiero tu parte.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TIENDA (adelanto) ===================== -->
+<section class="tienda-preview" id="tienda">
+  <div class="wrap">
+    <div class="sec-head revelar">
+      <div>
+        <h2>Oportunidades de la semana</h2>
+      </div>
+      <a class="btn btn-ghost" href="tienda.html">Ver todos los productos →</a>
+    </div>
+    <div class="prod-grid" data-destacados></div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE LUCAS ===================== -->
+<section class="sobre" id="lucas">
+  <div class="wrap">
+    <div class="sobre-foto revelar">
+      <!-- Para poner una foto de Lucas: guardala como fotos/lucas.jpg -->
+      <img src="fotos/lucas.jpg" alt="Lucas Vigo con su guitarra" data-fallback>
+      <div class="marco">
+        <div>
+          <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3"><circle cx="50" cy="36" r="16"/><path d="M18 90c4-18 17-28 32-28s28 10 32 28"/></svg>
+          Acá va una foto de Lucas<br><small>(fotos/lucas.jpg)</small>
+        </div>
+      </div>
+      <div class="sobre-firma"><b>Lucas Mauricio Vigo</b><span>Guitarrista de Imago · Músico sesionista · Fundador de Gordis Guitars</span></div>
+    </div>
+
+    <div class="revelar">
+      <h2>De los escenarios al mostrador.</h2>
+      <p class="lead" style="margin-top:22px">Soy Lucas Mauricio Vigo, guitarrista de <b style="color:var(--text)">Imago</b>. Antes pasé por <b style="color:var(--text)">Camino Rey</b>, banda independiente de pop-rock de La Plata, y además trabajo como músico sesionista, grabando y tocando en vivo para distintos artistas.</p>
+      <p>Entre ensayos, shows y horas de estudio pasaron por mis manos un montón de guitarras, amplis y pedales. Aprendí a escuchar un equipo, a saber cuándo vale lo que piden y cuándo no, y a ponerlo a punto para que suene como tiene que sonar. De ahí nace Gordis Guitars: un lugar para comprar, vender o dejar en consignación tu instrumento, atendido por un músico que sabe lo que vale un buen equipo y lo cuida como propio.</p>
+      <blockquote>“Cada guitarra tiene una historia. Mi trabajo es que siga sonando.”</blockquote>
+      <dl class="valores">
+        <div><dt>Músico en actividad</dt><dd>Sé cómo tiene que sonar un equipo y lo reviso con ese oído.</dd></div>
+        <div><dt>Asesoramiento real</dt><dd>Te recomiendo lo que te sirve, no lo más caro.</dd></div>
+        <div><dt>Trato directo</dt><dd>Hablás conmigo, de músico a músico.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOTOS ===================== -->
+<section id="fotos" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head revelar">
+      <div>
+        <h2>Instrumentos, escenarios y el día a día.</h2>
+      </div>
+      <a class="btn btn-ig" data-ig href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Seguime en Instagram
+      </a>
+    </div>
+    <!-- Las fotos se cargan solas desde la carpeta fotos/galeria (foto-1.jpg, foto-2.jpg, ...) -->
+    <div class="galeria-grid" data-galeria></div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section id="contacto" style="padding-top:0">
+  <div class="wrap">
+    <div class="contacto-box revelar">
+      <div>
+        <h2>¿Buscás algo o querés vender tu equipo?</h2>
+        <p class="lead">Escribime y te respondo personalmente. Consultas, tasaciones, consignaciones y pedidos especiales.</p>
+        <div class="contacto-btns">
+          <a class="btn btn-wa" data-wa href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 0 1-2.8-2.8l.8-1-1-2z"/></svg>
+            WhatsApp
+          </a>
+          <a class="btn btn-ig" data-ig href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <ul class="datos">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/></svg><div><b>WhatsApp</b><span data-wa-texto></span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg><div><b>Instagram</b><span data-ig-texto></span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><b>Zona</b><span data-zona></span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Horario</b><span data-horario></span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="logo.svg" alt=""><span class="brand-name">GORDIS <span>GUITARS</span></span></a>
+    <span>© <span data-anio></span> Gordis Guitars · <span data-zona></span></span>
+  </div>
+</footer>
+
+<a class="wa-flotante" data-wa href="#" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 0 1-2.8-2.8l.8-1-1-2z"/></svg>
+</a>
+
+<div class="lightbox" data-lightbox><button aria-label="Cerrar">×</button><img alt=""></div>
+
+<script src="config.js"></script>
+<script src="productos.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

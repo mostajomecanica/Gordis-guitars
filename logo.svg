@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 104" role="img" aria-label="Gordis Guitars">
+  <defs>
+    <linearGradient id="gg-fuego" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#d4161b"/>
+      <stop offset=".55" stop-color="#ff6a13"/>
+      <stop offset="1" stop-color="#ffc21a"/>
+    </linearGradient>
+    <linearGradient id="gg-cromo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".42" stop-color="#ffe7a3"/>
+      <stop offset=".5" stop-color="#e39a35"/>
+      <stop offset=".75" stop-color="#f6c66a"/>
+      <stop offset="1" stop-color="#9c4d12"/>
+    </linearGradient>
+    <path id="gg-g" d="M8 0 H40 V14 H29 V11 H11 V39 H29 V33 H21 V23 H40 V42 L32 50 H8 L0 42 V8 Z"/>
+  </defs>
+
+  <!-- Estallido de fuego -->
+  <polygon points="60.0,2.0 68.0,14.9 82.6,3.1 82.4,21.9 99.9,18.2 92.4,34.4 108.7,38.9 96.0,50.0 107.8,60.9 92.4,65.6 97.5,79.9 82.4,78.1 82.6,96.9 68.0,85.1 60.0,101.0 52.0,85.1 38.3,95.0 37.6,78.1 21.7,80.6 27.6,65.6 13.2,60.7 24.0,50.0 9.3,38.4 27.6,34.4 20.1,18.2 37.6,21.9 38.3,5.0 52.0,14.9" fill="url(#gg-fuego)" stroke="#15110d" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="60" cy="52" r="30" fill="#15110d" opacity=".25"/>
+
+  <!-- Rayo -->
+  <path d="M66 6 L50 46 H60 L52 98 L74 40 H63 Z" fill="#ffe36b" stroke="#15110d" stroke-width="2" stroke-linejoin="round" opacity=".9"/>
+
+  <!-- GG en bloque, inclinadas y cromadas -->
+  <g transform="translate(22 27) skewX(-12)">
+    <g stroke="#15110d" stroke-width="9" stroke-linejoin="round" fill="#15110d">
+      <use href="#gg-g"/><use href="#gg-g" x="46"/>
+    </g>
+    <g fill="url(#gg-cromo)" stroke="#fff6dc" stroke-width="1" stroke-linejoin="round">
+      <use href="#gg-g"/><use href="#gg-g" x="46"/>
+    </g>
+  </g>
+</svg>
